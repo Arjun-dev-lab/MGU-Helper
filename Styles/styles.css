@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.semester-title {
+    color: #464da8;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.resource-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resource-list li {
+    margin: 10px 0;
+}
+
+.resource-list a {
+    text-decoration: none;
+    color: #353535;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.resource-list a:hover {
+    color: #000000;
+}
+span{
+    color: black;
+}
+ul{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.C9DxTc {
+    color: #000000;
+}
+h1{
+    color: white;
+    background-color: #4CAF50;
+    text-align: center;
+}
