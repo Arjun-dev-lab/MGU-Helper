@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About MGU Helper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 24px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 90%;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .section {
+            display: none;
+            margin-top: 20px;
+            text-align: justify;
+        }
+        .section h2 {
+            color: #4CAF50;
+            font-size: 20px;
+        }
+        .section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About MGU Helper</h1>
+        <div class="button-container">
+            <button class="btn" onclick="showSection('aboutApp')">About the App</button>
+            <button class="btn" onclick="window.location.href='https://example.com/privacy-policy'">Privacy Policy</button>
+            <button class="btn" onclick="window.location.href='https://example.com/terms-conditions'">Terms and Conditions</button>
+        </div>
+
+        <!-- About the App Section -->
+        <div class="section" id="aboutApp">
+            <div class="container">
+                <h1>About MGU Helper</h1>
+                <p>M.G.U. Helper is a mobile app designed specifically for MG University students. The app offers an easy way to access previous year question papers, helping students prepare effectively for their exams. Whether you’re studying for your final exams or preparing for internal assessments, MGU Helper provides a comprehensive collection of previous year questions in PDF format.</p>
+                
+                <p>The app is optimized to allow quick and easy access to these resources, ensuring that students can focus more on their studies and less on searching for study materials. The app's interface is clean, simple, and straightforward, allowing for seamless navigation and easy downloading of question papers.</p>
+        
+                <h2>Key Features</h2>
+                <ul class="feature-list">
+                    <li><strong>Access to Previous Year Question Papers:</strong> Easily access previous year question papers for various MG University courses.</li>
+                    <li><strong>Easy Navigation:</strong> The user-friendly interface ensures that students can quickly find the materials they need.</li>
+                    <li><strong>Free Access:</strong> All materials are freely available to students, helping to ensure that resources are accessible to everyone.</li>
+                </ul>
+        
+                <h2>About the Developer</h2>
+                <p>M.G.U. Helper is developed by <strong>ASK Productions</strong>, an organization committed to enhancing educational opportunities by providing free learning resources to students. Our mission is to make education more accessible to everyone, starting with our focus on MG University students.</p>
+        
+                <div class="chatgpt-section">
+                    <h3>Need Help with Doubts? ChatGPT is Here to Assist You!</h3>
+                    <p>We understand that students often have questions or encounter difficulties while studying. To provide assistance, MGU Helper integrates ChatGPT, an advanced AI developed by OpenAI, directly into the app. ChatGPT serves as a virtual assistant, answering your academic questions and helping you clarify doubts related to the subjects you're studying.</p>
+        
+                    <p>The ChatGPT integration within MGU Helper is fully compliant with OpenAI’s <a href="https://openai.com/policies/terms-of-use" target="_blank">Terms of Use</a> and <a href="https://openai.com/policies/privacy-policy" target="_blank">Privacy Policy</a>. It provides students with the opportunity to ask questions about any academic topic, and ChatGPT will generate thoughtful and informative responses to help improve understanding and support learning.</p>
+                    
+                    <div class="chatgpt-details">
+                        <p><strong>What is ChatGPT?</strong> ChatGPT is an AI model created by OpenAI that generates human-like text responses to questions. It’s a powerful tool that can assist with a wide variety of academic queries, from explaining complex concepts to answering specific questions related to coursework.</p>
+                        <p><strong>How does it work?</strong> When you have a question or need clarification, you can simply ask within the app, and ChatGPT will respond with relevant information and explanations, helping you clear any doubts you may have.</p>
+                    </div>
+                </div>
+            </div></div>
+    </div>
+
+    <footer>
+        <p>Powered by ASK Productions</p>
+    </footer>
+
+    <script>
+        // Function to toggle visibility of the About App section
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            var activeSection = document.getElementById(sectionId);
+            activeSection.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
